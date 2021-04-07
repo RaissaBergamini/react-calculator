@@ -1,5 +1,127 @@
 .App {
   text-align: center;
+  background-color: #2e333c;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Calc {
+  text-align: center;
+  background-color: #282c34;
+  width: 400px;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+@font-face {
+  font-family: "Orbitron";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/orbitron/v17/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWgz.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+
+.Display {
+  font-family: "Orbitron", sans-serif;
+  font-size: 4rem;
+  /* border: 3px white solid; */
+  position: relative;
+  height: 6rem;
+  width: 100%;
+  text-align: right;
+}
+
+.Body {
+  /* border: 3px white solid; */
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  flex-direction: row;
+}
+
+.Button-div {
+  margin: 4px 2px;
+}
+
+.Numbers {
+  width: 60%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.Operators {
+  width: 40%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+}
+
+.operators-button {
+  margin: 2px;
+  flex: 0 0 calc(50% - 4px);
+}
+
+.numbers-button {
+  list-style: none;
+  margin: 2px;
+  flex: 0 0 calc(33.3333% - 4px);
+}
+
+.bottomRight {
+  right: 0px;
+  bottom: 0px;
+}
+
+.Button {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 100%; /* 1:1 Aspect Ratio */
+  min-height: 5rem;
+
+  font-family: FreeMono;
+  font-size: 2rem;
+  border-radius: 45%;
+  /* background-color: #2f7f9e; */
+  background-color: #318caf;
+  border: none;
+  color: white;
+  font-weight: bold;
+
+  padding: 3px;
+  text-align: center;
+  /* text-decoration: none; */
+  /* display: inline-block; */
+  cursor: pointer;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.Button span {
+  display: block;
+  padding: 1em 0.5em;
+  color: #fff;
+  line-height: initial;
+  /* padding-top: 22px; */
+  text-align: center;
+  line-height: 1em;
+}
+/* 
+.App-link {
+  color: #61dafb;
 }
 
 .App-logo {
@@ -13,21 +135,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +142,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
